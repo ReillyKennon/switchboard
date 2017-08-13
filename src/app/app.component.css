@@ -1,0 +1,14 @@
+button.on {
+
+  background-color: green;
+}
+button.off {
+  background-color: red;
+}
+
+div.row1 {
+  display: inline-block;
+}
+div.row2 {
+  display: grid;
+}

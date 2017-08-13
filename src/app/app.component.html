@@ -1,0 +1,26 @@
+<div class="row1"*ngFor="let button of buttons; let idx = index">
+  <button class="on"
+  *ngIf="button"
+  [ngClass]="{'on': button}"
+  (click)="toggle(idx)"
+
+  >On</button>
+  <button class="off"
+  *ngIf="!button"
+  [ngClass]="{'red': button}"
+  (click)="toggle(idx)"
+  >Off</button>
+</div>
+<div class="row2" *ngFor="let button of buttons; let idx = index">
+  <button class="on"
+  *ngIf="button"
+  [ngClass]="{'on': button}"
+  (click)="toggle(idx)"
+
+  >On</button>
+  <button class="off"
+  *ngIf="!button"
+  [ngClass]="{'red': button}"
+  (click)="toggle(idx)"
+  >Off</button>
+</div>
